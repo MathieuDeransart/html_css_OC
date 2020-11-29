@@ -1,0 +1,76 @@
+/* Pour plus de synaxe :
+https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors
+*/
+
+/* For more about font :
+https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatez-du-texte#/id/r-1610262
+*/
+@font-face {
+    font-family: 'ArchivoNarrow';
+    src: url('../ressources/ArchivoNarrow-Regular.ttf');
+    src: url('../ressources/ArchivoNarrow-Regular.ttf') format('truetype'),
+    url('../ressources/ArchivoNarrow-Regular.otf') format('opentype');
+}
+
+*	/* c'est le selecteur universel */
+{
+	font-size: 20px; /* peut être en px, cm, mm, <%>em, <%>ex*/
+	font-family: ArchivoNarrow, sans-serif;
+	text-align: justify; /* 'left', 'center', 'right', 'justify' */
+}
+
+
+h1, em /* h1 et em */
+{
+    color: blue; /* Et on commente comme ça */
+    font-style: italic; /* ou 'normal' */
+    font-weight: bold; /* ou 'normal' */
+    text-decoration: underline; /* 'underline', 'line-through', 'overline', 'blink', 'none' */
+}
+
+h1 em /* em dans une balise h1 */
+{
+
+}
+
+h3 + p /* la première balise p après toute balise h3 */
+{
+
+}
+
+#pupu /*pour gérer l'id pupu*/
+{
+	color: red;
+	font-size: 30px;
+}
+
+.incompris /* pour gérer la classe incompris*/
+{
+	color: orange;
+	font-size: 1.2em;
+}
+
+a[title] /* toutes les balises a avec un attribut title */
+{
+
+}
+
+a[title="Cliquez ici"] /* toutes les balises a avec un attribut title = "Cliquez ici" */
+{
+
+}
+
+a[title*="ici"] /* toutes les balises a dont le titre contient "ici" */
+{
+
+}
+
+.imageflottante
+{
+	float: left;
+}
+
+.dessous
+{
+	clear: both; /* Ou juste 'left' ou 'right' */
+}

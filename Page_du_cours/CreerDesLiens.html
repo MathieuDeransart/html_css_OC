@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <title>Créer des liens</title>
+    </head>
+
+    <body>
+        <!-- Corps de la page -->
+        <h1 id="monAncre">Titre ancré </h1>
+        <p>Sur cette page nous allons expérimenter les liens</p>
+        <p>Le premier lien est celui du cours : <a href="https://openclassrooms.com" title="Là où est le cours" target="_blank"> OpenClassrooms <a></p>
+        <p>Le deuxième est un lien interne au site, sur l'organisation des textes :<br/>
+        <a href="OrganisezVotreTexte.html" title="La première page du cours">Comment organiser ses textes ? </a></p>
+        <p>On peut aussi naviguer sur la page actuelle en utilisant des "ancres" <br/> <a href="#monAncre" title="La page est pas assez grande"> Retourner au titre ancré </a>
+        </p>
+        <p> Pour toute complainte vous pouvez contacter le <a href="mailto:service.juridique@unservice.fr">service juridique</a></p>
+        <p>Sinon, téléchargez cet intéressant <a href="../ressources/txtAtelecharger.txt">fichier</a>.</p>
+        <p>On peut aussi mettre un lien vers une image avec la balise orpheline "img" : <br/> 
+        <a href="../ressources/montagne.jpg"><img src="../ressources/montagne.jpg" alt="Image de montagne" title="montagne"></a></p>
+        <p> Si l'image n'arrive pas à charger on obtient :
+        <img src="../ressources" alt="Image de montagne" title="montagne">
+        </p>
+    <figure>
+        <img src="../ressources/screenshot.png">
+        <figcaption>Légende : Le logiciel Bloc-Notes</figcaption>
+    </figure>
+    </body>
+</html>
